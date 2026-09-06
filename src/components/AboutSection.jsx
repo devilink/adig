@@ -1,6 +1,7 @@
 import React from 'react';
 import AnimatedButton from './AnimatedButton';
 import mapImage from '../../assets/map.jpg';
+import smartImage from '../../assets/smart.jpg';
 
 export default function AboutSection() {
   return (
@@ -32,7 +33,7 @@ export default function AboutSection() {
           {/* Card 2: Top Right Image */}
           <div className="md:col-span-12 lg:col-span-5 rounded-[32px] overflow-hidden min-h-[320px] shadow-[0_4px_24px_rgba(0,0,0,0.02)] relative group">
             <img 
-              src="assets/map.jpg" 
+              src={mapImage} 
               alt="Classroom collaborative work" 
               className="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,0.1,0.25,1)] group-hover:scale-105"
             />
@@ -52,7 +53,7 @@ export default function AboutSection() {
           {/* Card 4: Center Image */}
           <div className="md:col-span-6 lg:col-span-4 rounded-[32px] overflow-hidden min-h-[340px] shadow-[0_4px_24px_rgba(0,0,0,0.02)] relative group">
             <img 
-              src="assets/smart.jpg" 
+              src={smartImage} 
               alt="Digital interface showcase" 
               className="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,0.1,0.25,1)] group-hover:scale-105"
             />
